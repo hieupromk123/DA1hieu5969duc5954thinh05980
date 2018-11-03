@@ -37,5 +37,5 @@ public class UserDAO implements Constant {
         sqLiteDatabase.close();
 
     }
-   
+
 }
