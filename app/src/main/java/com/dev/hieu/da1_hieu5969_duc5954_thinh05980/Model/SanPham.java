@@ -1,10 +1,19 @@
 package com.dev.hieu.da1_hieu5969_duc5954_thinh05980.Model;
 
 public class SanPham {
-    private String TenSanPham;
-    private String TenNhaPhanPhoi;
-    private int Gia;
-    private String TenLoai;
+    public String TenSanPham;
+    public String TenNhaPhanPhoi;
+    public int Gia;
+    public String TenLoai;
+    public String MaSanPham;
+
+    public String getMaSanPham() {
+        return MaSanPham;
+    }
+
+    public void setMaSanPham(String maSanPham) {
+        MaSanPham = maSanPham;
+    }
 
     public String getTenSanPham() {
         return TenSanPham;
@@ -44,5 +53,7 @@ public class SanPham {
         TenNhaPhanPhoi = tenNhaPhanPhoi;
         Gia = gia;
         TenLoai = tenLoai;
+        TenSanPham = tenSanPham;
     }
+    public SanPham(){}
 }

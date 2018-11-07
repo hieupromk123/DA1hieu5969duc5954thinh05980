@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    card_view:cardCornerRadius="4dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/imgRe"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/tvTenSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ten"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tvGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gia"
+                android:layout_marginStart="10dp" />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnThemVaoGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/them"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

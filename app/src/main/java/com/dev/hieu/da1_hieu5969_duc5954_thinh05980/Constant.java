@@ -37,11 +37,11 @@ public interface Constant {
 
     String CREATE_TABLE_BILL = "CREATE TABLE " + TABLE_BILL + "(" +
 
-            COLUMN_SOLUONG + " NVARCHAR(50) PRIMARY KEY," +
+            COLUMN_SOLUONG + " NVARCHAR(50)," +
 
-            COLUMN_MAHOADON + " NVARCHAR(30)," +
+            COLUMN_MAHOADON + " NVARCHAR(30) PRIMARY KEY," +
 
-            COLUMN_MASP + " NVARCHAR FOREIGN KEY" +
+            COLUMN_MASP + " NVARCHAR" +
 
 
             ")";
@@ -55,11 +55,13 @@ public interface Constant {
     String COLUMN_TENLOAI = "TenLoai";
     String COLUMN_TENNPP = "TenNPP";
 
+
     String CREATE_SANPHAM = "CREATE TABLE " + TABLE_SANPHAM + "(" +
 
 
 
             COLUMN_TENSP + " NVARCHAR," +
+            COLUMN_MASP + " NVARCHAR PRIMARY KEY," +
 
             COLUMN_GIA + " NVARCHAR," +
             COLUMN_TENLOAI + " NVARCHAR," +

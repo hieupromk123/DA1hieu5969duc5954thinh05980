@@ -9,7 +9,7 @@ import com.dev.hieu.da1_hieu5969_duc5954_thinh05980.Constant;
 public class DataManager extends SQLiteOpenHelper implements Constant {
 
     public DataManager(Context context) {
-        super(context, "PCManganer", null, 0);
+        super(context, "PCManganer", null, 1);
 
     }
 
